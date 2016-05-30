@@ -13,3 +13,5 @@ A commit is a save point which is typically created after changes are made to a 
 
 * What is a merge conflict?
 A merge conflict occurs when there is no way for git to determine which version of a code is the correct version, and both versions cannot be accomodated. For example, if we attempt to merge branch-1 with another branch, branch-2, and in one of the files that exists in both branches there is a line of code that differs between the files on the two branches but is sandwiched between identical lines of code, git won't know which version of the code should be kept and we will get a merge conflict.
+
+* This is just a minor change for challenge 1.5 release 2's sake.
