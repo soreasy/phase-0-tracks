@@ -64,3 +64,7 @@ is nested inside the contact-info section) */
 #contact-info p {
   line-height: .8;
 }
+
+#resume-title2 {
+  color: blue;
+}
