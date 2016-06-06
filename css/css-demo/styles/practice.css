@@ -1,0 +1,28 @@
+#contact-info {
+	font-size: .8em;
+}
+
+.job {
+	background-color: #e9e5dc;
+	border: 1px solid black;
+  padding: 20px;
+  border-color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accomplishment {
+	font-size: .8em;
+
+}
+
+#resume-title2 {
+	color: pink;
+}
+
+#personal-objective:hover { outline: dotted red; }
+
+section#personal-objective p{
+	color: blue;
+}

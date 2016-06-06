@@ -1,12 +1,13 @@
 section#contact-info {
   position: fixed;
+  text-align: center;
   top: 0px;
   right: 0px;
-  text-align: center;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid black;
   padding: 20px;
+  border-color: black;
 }
 
 h1#resume-title {
