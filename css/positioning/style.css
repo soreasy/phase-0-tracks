@@ -1,5 +1,19 @@
+
+
 #octo {
-	width: 200px;
-	margin: 0 100px 0 100px;
+	width: 40%;
+	margin: 10% 30%;
 	background: #eee;
+}
+
+#glasses {
+	position: relative; /*Relative to the normal (static) position that the element would otherwise have*/
+	left: 44%;
+	top: 375px;
+}
+
+#hat {
+	position: relative;
+	left: 240px;
+	top: 160px;
 }
