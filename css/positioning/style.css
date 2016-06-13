@@ -1,6 +1,6 @@
 
 
-#octo {
+/*#octo {
 	width: 40%;
 	margin: 10% 30%;
 	background: #eee;
@@ -8,12 +8,36 @@
 
 #glasses {
 	position: relative; /*Relative to the normal (static) position that the element would otherwise have*/
-	left: 44%;
-	top: 375px;
+/*	left: 44%;
+	top: 90%;
 }
 
 #hat {
 	position: relative;
 	left: 240px;
 	top: 160px;
+}*/
+
+#octo {
+	background: #eee;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	right: 30%;
+	z-index: 1;
+
+}
+
+#glasses {
+	position: absolute; /*Relative to the normal (static) position that the element would otherwise have*/
+	top: 280px;
+	left: 400px;
+	z-index: 3;
+}
+
+#hat {
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	z-index: 2;
 }
