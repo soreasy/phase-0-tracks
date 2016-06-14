@@ -1,3 +1,39 @@
 body {
-	background-color: hotpink;
+    font-family: Futura;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: #f9dede;
+/* 
+on color codes
+https://www.youtube.com/watch?v=LFXN9PiOGtY
+on human perception
+https://www.youtube.com/watch?v=Tw0PlGpaqy4
+*/
+}
+
+
+
+.column-1 {
+  display: inline-block;
+  max-width: 45%;
+  background: #E6FFA2;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.column-2 {
+  display: inline-block;
+  max-width: 45%;
+  background: #F1B8FF;
+  padding: 5px;
+  vertical-align: top;
+}
+
+footer {
+  text-align: center;
+  background: #9AD2FF;
+  margin-top: 10px;
 }
