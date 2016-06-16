@@ -1,0 +1,22 @@
+- print to screen "What floor would you like to go to?"
+- set desired_floor = response
+- convert desired_floor to an integer
+- scan current floor number and set it to current_floor
+- if desired_floor = current_floor:
+	- do nothing
+- elsif current_floor < desired_floor:
+	- examine the buttons on the wall
+	- while there is no button above a given button:
+		- press that button
+	- when the elevator arrives:
+		- enter the elevator
+	- scan the buttons in the elevator until you find a button for which that button number = current_floor
+	- set move_amount = desired_floor - current_floor
+	- move sensor move_amount buttons to the right until:
+		- either desired_floor button is reached or there is not another button to the right:
+			- if desired_floor button is reached:
+				- press that button
+			- if there is not another button to the right:
+				- move sensor up one row of buttons and to the left until there is no longer another button to the left of the current button
+	- when the doors open back up:
+		- exit the elevator and do a victory dance
