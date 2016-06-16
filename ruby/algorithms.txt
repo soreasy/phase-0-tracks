@@ -1,3 +1,4 @@
+Robot-Elevator Algorithm:
 - print to screen "What floor would you like to go to?"
 - set desired_floor = response
 - convert desired_floor to an integer
@@ -20,3 +21,34 @@
 				- move sensor up one row of buttons and to the left until there is no longer another button to the left of the current button
 	- when the doors open back up:
 		- exit the elevator and do a victory dance
+
+Make-Scrambled-Eggs Algorithm:
+- walk to fridge
+- examine contents of fridge
+- if number_of_eggs >= 3:
+	- take 3 eggs out of fridge
+	- put pan on stove
+	- turn on the associated burner to medium heat
+	- find container with at least a certain volume
+	- crack eggs on edge of container and add contents to container
+	- until contents are homogenous:
+		- whip up the contents with a fork
+	- find olive oil in cabinet
+	- until surface of pan is lightly covered in olive oil:
+		- add oil to pan
+	- add eggs to pan
+	- until eggs are just ever so slightly watery:
+		- scramble eggs
+	- sprinkle some salt and pepper on scrambled eggs
+	- move eggs to a plate
+	- do a victory dance
+- else:
+	- think of something else to eat =(
+
+
+
+
+
+
+
+
