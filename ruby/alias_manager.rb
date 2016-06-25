@@ -1,9 +1,12 @@
+# separates names and creates a string with the first and last name reversed
 def fname_lname_swap(string)
 	name_ary = string.split(' ')
 	swapped_name = name_ary[1] + " " + name_ary[0]
 end
 
-
+# if a char is a vowel, it becomes the next vowel in the vowels array, with the appropriate case
+# otherwise, it becomes the next character using .next method, accounting for edge cases
+# returns the new string with all characters incremented in some way
 def make_chars_next(string)
 	vowels = ['a', 'e', 'i', 'o', 'u']
 	string_with_chars_incremented = ""
@@ -38,6 +41,7 @@ end
 
 
 aliases = {}
+# allows the user to enter names they want to create fake names for until they type 'quit'
 
 loop do
 	puts "Enter the first and last name (separated by a space) of the name you'd like to create a fake name for (type 'quit' if you're done): "
