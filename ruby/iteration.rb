@@ -58,18 +58,3 @@ end
 p keep_if_hash({a: 1, b: 2, c:3, d:4, e:5, f:0})
 
 
-def delete_until_false_arr(x)
-	x.drop_while { |item| item < 3 }
-end
-
-p delete_until_false_arr([0,1,2,3,4])
-
-def delete_until_false_hash(x)
-	x.delete_if { |key, value| value<3}
-end
-
-p delete_until_false_hash({a: 1, b: 2, c:3, d:4, e:5, f:0})
-
-
-
-
