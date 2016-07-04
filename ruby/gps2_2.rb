@@ -43,4 +43,54 @@
 	# print an intro line such as 'these are the contents of your grocery list with their associated quantities'
 	# FOR EACH item in the list
 		# print the item and its associated quantity
-# output: returns nil (just prints the list)
+# output: returns the hash
+
+def create_list_of(string_of_items)
+	ary_of_items = string_of_items.split(' ')
+	item_list = {}
+	ary_of_items.each {|x| item_list[x] = 1}
+	print_list(item_list)
+end
+
+def add_to_list(item, quantity, hash)
+	hash[item] = quantity
+	hash
+end
+
+def remove_from_list(item, hash)
+	if hash.include?(item)
+		hash.delete(item)
+	else
+		puts "The given item doesn't exist in the grocery list."
+	end
+	hash
+end
+
+def update_quantity(item, new_quantity, hash)
+	if hash.include?(item)
+		hash[item] = new_quantity
+	else
+		puts "The given item doesn't exist in the grocery list."
+	end
+	hash
+end
+
+def print_list(hash)
+	puts "The contents of your grocery list with their associated quantities are as follows: "
+	hash.each {|item, quantity| puts "#{item.capitalize}: #{quantity}"}
+end
+
+grocery_list = create_list_of("banana apple orange")
+add_to_list("mango", 4, grocery_list)
+print_list(grocery_list)
+remove_from_list("apple", grocery_list)
+print_list(grocery_list)
+update_quantity("mango", 6, grocery_list)
+print_list(grocery_list)
+
+
+
+
+
+
+
