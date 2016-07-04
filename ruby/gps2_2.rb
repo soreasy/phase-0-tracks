@@ -45,6 +45,8 @@
 		# print the item and its associated quantity
 # output: returns the hash
 
+# Release 2
+
 def create_list_of(string_of_items)
 	ary_of_items = string_of_items.split(' ')
 	item_list = {}
@@ -80,13 +82,37 @@ def print_list(hash)
 	hash.each {|item, quantity| puts "#{item.capitalize}: #{quantity}"}
 end
 
-grocery_list = create_list_of("banana apple orange")
-add_to_list("mango", 4, grocery_list)
-print_list(grocery_list)
-remove_from_list("apple", grocery_list)
-print_list(grocery_list)
-update_quantity("mango", 6, grocery_list)
-print_list(grocery_list)
+#grocery_list = create_list_of("banana apple orange")
+#add_to_list("mango", 4, grocery_list)
+#print_list(grocery_list)
+#remove_from_list("apple", grocery_list)
+#print_list(grocery_list)
+#update_quantity("mango", 6, grocery_list)
+#print_list(grocery_list)
+
+# Release 3
+
+new_list = create_list_of("Apples Oranges Lollipops")
+add_to_list("Lemonade", 2, new_list)
+add_to_list("Tomatoes", 3, new_list)
+add_to_list("Onions", 1, new_list)
+add_to_list("Ice Cream", 4, new_list)
+print_list(new_list)
+remove_from_list("Lemonade", new_list)
+update_quantity("Ice Cream", 1, new_list)
+print_list(new_list)
+
+# Release 5
+
+# - I realized how easy it is to think first in the language that comes naturally to me, english!, and then code from there.
+# - Using hashes allows us to store an item linked to a quantity, while doing so with an array would require saving string items that hold an item and quantity and which would have to be separated later on
+# - A method returns whatever is returned by the last line of code in that method
+# - You can pass any data structure to a method as an argument (ie - a hash, string, integer, etc)
+# - You can pass information between methods by setting the methods' parameters to be whatever information that method will need
+# - This solidifed implicit returns and working with methods in general.
+# One thing I'm still confused about is how you might incorporate an optional parameter:
+# For example, if you have 3 parameters but want the 2nd one to be optional, how does the computer know upon being passed 2 arguments that the 2nd argument is intended to correspond to the 3rd parameter?
+
 
 
 
