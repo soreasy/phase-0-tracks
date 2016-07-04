@@ -102,6 +102,18 @@ remove_from_list("Lemonade", new_list)
 update_quantity("Ice Cream", 1, new_list)
 print_list(new_list)
 
+# Release 5
+
+# - I realized how easy it is to think first in the language that comes naturally to me, english!, and then code from there.
+# - Using hashes allows us to store an item linked to a quantity, while doing so with an array would require saving string items that hold an item and quantity and which would have to be separated later on
+# - A method returns whatever is returned by the last line of code in that method
+# - You can pass any data structure to a method as an argument (ie - a hash, string, integer, etc)
+# - You can pass information between methods by setting the methods' parameters to be whatever information that method will need
+# - This solidifed implicit returns and working with methods in general.
+# One thing I'm still confused about is how you might incorporate an optional parameter:
+# For example, if you have 3 parameters but want the 2nd one to be optional, how does the computer know upon being passed 2 arguments that the 2nd argument is intended to correspond to the 3rd parameter?
+
+
 
 
 
