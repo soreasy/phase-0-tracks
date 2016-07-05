@@ -45,9 +45,21 @@ class Lifeguard
 
 end
 
-soren = Lifeguard.new
-soren.makes_save_of("Tati")
-soren.blows_whistle(4)
+# soren = Lifeguard.new
+# soren.makes_save_of("Tati")
+# soren.blows_whistle(4)
+
+name_ary = ['bob', 'yuki', 'tati', 'soren', 'joe', 'jill', 'musa', 'jennifer', 'christopher', 'lisa']
+
+lifeguard_ary = []
+50.times {lifeguard_ary << Lifeguard.new}
+
+lifeguard_ary.each do |guard|
+	name = name_ary.sample
+	guard.makes_save_of(name)
+	num_kids = rand(10)
+	guard.blows_whistle(num_kids)
+end
 
 # zara = Puppy.new
 # zara.fetch("ball")
