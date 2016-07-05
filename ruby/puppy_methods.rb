@@ -29,9 +29,29 @@ class Puppy
 
 end
 
-zara = Puppy.new
-zara.fetch("ball")
-zara.speak(5)
-zara.roll_over
-zara.dog_years(10)
-zara.flip
+class Lifeguard
+
+	def initialize
+		puts "The lifeguard is getting ready to take action in the pool!"
+	end
+
+	def makes_save_of(name)
+		puts "The lifeguard saved #{name}'s life!"
+	end
+
+	def blows_whistle(num_kids)
+		puts "The lifeguard blew his/her whistle at #{num_kids} kids!"
+	end
+
+end
+
+soren = Lifeguard.new
+soren.makes_save_of("Tati")
+soren.blows_whistle(4)
+
+# zara = Puppy.new
+# zara.fetch("ball")
+# zara.speak(5)
+# zara.roll_over
+# zara.dog_years(10)
+# zara.flip
