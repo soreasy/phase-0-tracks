@@ -66,6 +66,6 @@ while creation_interest != 'no'
 	creation_interest = gets.chomp
 end
 
-prodigees.each {|player| puts "#{@name} plays with their #{@plays_with} hand. They are #{@age} years old and their secret weapon is #{@secret_weapon}!"}
+prodigees.each {|player| puts "#{player.name} plays with their #{player.plays_with} hand. They are #{player.age} years old and their secret weapon is #{player.secret_weapon}!"}
 
 
