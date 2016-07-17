@@ -22,7 +22,14 @@ function Car(name, age, isBroken) {
 
 }
 
-var newCar = Car.new("Soren's car", 10, false)
+var oldCar = new Car("Soren's car", 10, true)
+var newCar = new Car("Tati's car", 1, false)
+
+console.log("Name: " + oldCar.name + ". Age: " + oldCar.age + ".");
+oldCar.turnOn();
+
+console.log("Name: " + newCar.name + ". Age: " + newCar.age + ". " + "Is the car broken? " + newCar.isBroken);
+
 
 for (var key in newCar) {
 	if (newCar.hasOwnProperty(key)) {
