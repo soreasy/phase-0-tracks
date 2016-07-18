@@ -146,3 +146,18 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# One syntax uses strings as keys (along with the hash rocket) and the other uses symbols as keys
+
+# Require_relative basically copies and pastes the content of the passed file
+# It's different from require in that it assumes the passed file is in the same directory as the file being worked on
+# and so it doesn't need a path to the passed file
+
+# One can use .each, .each_key, .each_value, or .each_pair to iterate through a hash
+
+# I noticed that the variables are all instance variables, and therefore don't need to be passed to the instance method
+# since the instance method can already access them
+
+# I most solidified the concept of scope and how it relates to instances of a class
+
+
