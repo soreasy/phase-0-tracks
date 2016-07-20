@@ -1,0 +1,89 @@
+1.
+
+cmd:
+SELECT * FROM managers;
+
+output:
+id          name        age         loves_job
+----------  ----------  ----------  ----------
+1           Nick        28          true
+2           Ale         30          true
+3           Bill        29          false
+
+2.
+
+cmd:
+UPDATE managers SET loves_job="true" WHERE name="Bill";
+
+output:
+n/a
+
+3.
+
+cmd:
+SELECT * FROM pools, managers WHERE pools.manager_id = managers.id;
+
+output:
+id          location    max_occupancy  is_open     manager_id  id          name        age         loves_job
+----------  ----------  -------------  ----------  ----------  ----------  ----------  ----------  ----------
+1           Bronx       150            true        1           1           Nick        28          true
+2           Brooklyn    250            true        1           1           Nick        28          true
+3           Queens      200            true        2           2           Ale         30          true
+4           Manhattan   300            true        2           2           Ale         30          true
+5           Staten Isl  175            false       3           3           Bill        29          true
+
+4.
+
+cmd:
+SELECT pools.location, managers.name FROM pools JOIN managers ON pools.manager_id = managers.id;
+
+output:
+location    name
+----------  ----------
+Bronx       Nick
+Brooklyn    Nick
+Queens      Ale
+Manhattan   Ale
+Staten Isl  Bill
+
+5.
+
+cmd:
+DELETE FROM pools WHERE is_open="false";
+
+output:
+n/a
+
+Release 3 - different JOINS
+
+cmd:
+SELECT managers.name, pools.location FROM managers LEFT JOIN pools ON managers.id = pools.manager_id;
+
+output:
+name        location
+----------  ----------
+Nick        Bronx
+Nick        Brooklyn
+Ale         Manhattan
+Ale         Queens
+Bill
+
+cmd:
+SELECT location, max_occupancy, is_open, manager_id, managers.id, name FROM pools CROSS JOIN managers;
+
+output:
+location    max_occupancy  is_open     manager_id  id          name
+----------  -------------  ----------  ----------  ----------  ----------
+Bronx       150            true        1           1           Nick
+Bronx       150            true        1           2           Ale
+Bronx       150            true        1           3           Bill
+Brooklyn    250            true        1           1           Nick
+Brooklyn    250            true        1           2           Ale
+Brooklyn    250            true        1           3           Bill
+Queens      200            true        2           1           Nick
+Queens      200            true        2           2           Ale
+Queens      200            true        2           3           Bill
+Manhattan   300            true        2           1           Nick
+Manhattan   300            true        2           2           Ale
+Manhattan   300            true        2           3           Bill
+
