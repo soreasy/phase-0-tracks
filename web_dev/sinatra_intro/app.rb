@@ -70,7 +70,10 @@ end
 
 get '/search_for/:name' do
   student = db.execute("SELECT * FROM students WHERE name =?", [params[:name]])[0]
-  student.to_s
+  response = ""
+  response << "Name: #{student['name']}<br>"
+  response << "Campus: #{student['campus']}<br>"
+  response << "Age: #{student['age']}<br>"
 end
 
 
